@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>University Website Design</title>
+</head>
+
+<body>
+    <section class="section2">
+        <header class="header">
+            <a href="index.html"><img src="./eduford_img/images/logo.png" alt="image"></a>
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <i class="fa fa-bars" id="menu"></i>
+
+        </header>
+        <div class="text1">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122843.21729315985!2d77.96958853334817!3d15.811832921012138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5ddf506b7c6c9%3A0x19a7ac74f858d6f2!2sKurnool%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1672823656883!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+          <div class="row">
+            <div class="contact-col">
+                <div class="details">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>
+                        <h5>XYZ this my building</h5>
+                        <p>Andhra Pradesh, Kurnool,IN</p>
+                    </span>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+91 12354678998</h5>
+                        <p>This is college number</p>
+                    </span>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>shaik@gmail.com</h5>
+                        <p>Email your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                <input type="text" placeholder="Enter the name" required>
+                <input type="text" placeholder="Enter the Email" required>
+                <input type="text" placeholder="Enter the Subject" required>
+                <textarea  rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+          </div>
+    </section>
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br> and
+            more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+
+            <h3>Made With <i class="fa fa-heart"></i> By ABDUL SADIQ</h3>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------Toggle menu ------------ -->
+
+    <script>
+
+        let menu = document.querySelector("#menu");
+
+        let Nav = document.querySelector("ul");
+
+        menu.onclick = () => {
+            menu.classList.toggle("fa-x")
+            Nav.classList.toggle("active")
+        }
+        window.onscroll = () => {
+            menu.classList.remove("fa-x")
+            Nav.classList.remove("active")
+        }
+    </script>
+</body>
+
+</html>
